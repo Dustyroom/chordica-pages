@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Chordica</title>
+<style>
+  :root { color-scheme: light dark; --fg: #16181d; --fg-soft: #5b6270; --bg: #fdfdfc; --line: #e2e2df; --accent: #16181d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8e8e6; --fg-soft: #9aa1ad; --bg: #16181d; --line: #2c2f36; --accent: #e8e8e6; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem 6rem; max-width: 46rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.1rem; margin: 2.5rem 0 .75rem; letter-spacing: -.005em; }
+  .dates { color: var(--fg-soft); font-size: .8rem; margin: 0 0 2rem; }
+  .lede { font-size: 1.05rem; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .875rem; margin: 1rem 0; }
+  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85em; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .wrap { overflow-x: auto; }
+  footer { margin-top: 3rem; color: var(--fg-soft); font-size: .8rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="dates">Chordica, by Dustyroom · Effective 9 July 2026 · Last updated 9 July 2026</p>
+
+<p class="lede"><strong>Chordica does not collect your data.</strong> There are no accounts, no cookies, no analytics, and no servers that receive your work. Everything you make stays on your device unless you deliberately export it.</p>
+
+<p>This policy explains what that means in practice, and describes the few places where information does leave your machine — all of them things you choose to do.</p>
+
+<hr>
+
+<h2>1. What we collect</h2>
+
+<p>Nothing. Chordica has no backend. The application makes no network requests of its own: it does not send analytics, telemetry, crash reports, or usage statistics, and it never transmits your chord progressions anywhere.</p>
+
+<p>We do not know who you are, how many progressions you have written, or whether you have opened the app at all.</p>
+
+<h2>2. Cookies</h2>
+
+<p>Chordica sets no cookies of any kind, and there is no consent banner because there is nothing to consent to.</p>
+
+<p>The app does use your browser's <strong>Local Storage</strong> to remember your work and settings between sessions. This is not a cookie: it is never attached to a network request, and it cannot be read by us or by anyone else. It is data your browser keeps for you, on your device.</p>
+
+<h2>3. What is stored on your device</h2>
+
+<div class="wrap">
+<table>
+  <thead>
+    <tr><th>Key</th><th>What it holds</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>chordica-state-v2</code></td><td>Your current progression, key and mood, locked chords, arpeggiator settings, volume, and your custom voicings.</td></tr>
+    <tr><td><code>chordica-theme-v2</code></td><td>Your light or dark theme preference.</td></tr>
+    <tr><td><code>supporterMode</code></td><td>A true/false flag recording that supporter features are unlocked on this device.</td></tr>
+    <tr><td><code>donationNudgeTriggered</code></td><td>A true/false flag so the donation prompt is not shown repeatedly.</td></tr>
+    <tr><td><code>donationNudgeDismissed</code></td><td>A true/false flag recording that you dismissed the donation prompt.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Your undo and redo history is held in memory only and is discarded when you close the app.</p>
+
+<p>Chordica also stores a copy of its own program files (scripts, styles, icons, the metronome click sound) in your browser's cache, so that it loads quickly and works offline. This cache contains no information about you.</p>
+
+<p>All of the above can be erased at any time by clearing site data for Chordica in your browser, or by uninstalling the desktop application.</p>
+
+<h2>4. What leaves your device</h2>
+
+<p>Only when you ask it to.</p>
+
+<ul>
+  <li><strong>Files you export.</strong> Choosing Export MIDI, WAV, or JSON writes a file to the location you pick. It is sent nowhere. The same applies to importing and exporting custom voicings.</li>
+  <li><strong>Visiting our Ko-fi page.</strong> If you click the support button, Chordica opens <a href="https://ko-fi.com/Z8Z523ZDI" rel="noopener noreferrer">ko-fi.com</a> in a new tab. From that point you are on Ko-fi's website, and Ko-fi — not us — receives your IP address and whatever else their site collects. Any donation is processed entirely by Ko-fi and its payment providers. We never see, receive, or store your card number, bank details, or billing address. Please read <a href="https://more.ko-fi.com/privacy" rel="noopener noreferrer">Ko-fi's privacy policy</a> before donating.</li>
+  <li><strong>Returning from Ko-fi.</strong> After a donation, Ko-fi may send you back to Chordica with <code>?supporter=true</code> in the web address. Chordica reads that, sets the local <code>supporterMode</code> flag described above, and forgets everything else. No name, email, or payment identifier is attached to that flag, and it never leaves your device.</li>
+</ul>
+
+<h2>5. Web server logs</h2>
+
+<p>When you load Chordica in a browser, the files are served by a third-party static hosting provider. Like effectively every web server, theirs records standard technical request logs — typically your IP address, the time of the request, the file requested, and your browser's user-agent string. These logs are created by the hosting provider in the ordinary course of delivering the page, are retained under that provider's own policy, and are not used by us to build any profile of you.</p>
+
+<p>Installing Chordica as an app, or using the desktop version, means the files load locally and no such request is made.</p>
+
+<h2>6. The desktop application</h2>
+
+<p>The desktop version of Chordica contains no telemetry and makes no network connections during normal use.</p>
+
+<p>Should we add an automatic update check in a future release, it will contact our own update server to ask whether a newer version exists, which necessarily reveals your IP address and the version you are running. We will update this policy before shipping that feature.</p>
+
+<h2>7. If we ever add analytics</h2>
+
+<p>We may one day want basic, anonymised usage statistics to understand which features people actually use. We have not built this, and today no such code exists in the app.</p>
+
+<p>If we do add it, we commit to the following, and we will publish the updated policy before the feature ships: it will be off by default; it will not load, set cookies, or transmit anything until you explicitly opt in; declining will leave every feature of Chordica fully available; and you will be able to withdraw consent at any time.</p>
+
+<h2>8. Children</h2>
+
+<p>Chordica is suitable for all ages. Because we collect no personal information from anyone, we collect none from children.</p>
+
+<h2>9. Your rights</h2>
+
+<p>Privacy laws such as the GDPR and the CCPA give you rights to access, export, correct, and delete personal data that a company holds about you. We hold none, so there is nothing for us to hand over or erase. In practical terms:</p>
+
+<ul>
+  <li><strong>To export your work</strong>, use Export JSON at any time. The file is yours, in an open format.</li>
+  <li><strong>To delete everything</strong>, clear site data for Chordica in your browser, or uninstall the desktop app. This is immediate and complete; you do not need to ask us, and we could not do it for you if you did.</li>
+</ul>
+
+<h2>10. Changes</h2>
+
+<p>If this policy changes, we will revise the "last updated" date above. Material changes — in particular, ever beginning to collect data — will be described here plainly rather than buried.</p>
+
+<h2>11. Contact</h2>
+
+<p>Questions about this policy, or about privacy in Chordica generally: <a href="https://dustyroom.com/about/" rel="noopener noreferrer">dustyroom.com/about</a>.</p>
+
+<footer>
+  <p><a href="./terms-of-use.html">Terms of Use</a> · Chordica is made by Dustyroom.</p>
+</footer>
+
+</body>
+</html>
